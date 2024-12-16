@@ -1,0 +1,13 @@
+- Prepare Tests:
+    - Create a suite of tests (automated or manual) that validate the edge cases and failure scenarios, especially the
+      validation rules.
+    - Test invalid rating, missing fields, and improper comment formats.
+- Focus on Overlooked Areas:
+    - Test empty, null, or non-alphanumeric values for productId and userId.
+    - Ensure the response includes appropriate error messages.
+- Edge Cases:
+    - Developers often forget to validate comment length when it's provided.
+    - Ensure productId and userId are alphanumeric; developers might skip this.
+- Non-Happy Path:
+    - Emphasize returning proper error responses for invalid input.
+    - Developers may skip or inconsistently handle HTTP 400 responses.
